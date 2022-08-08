@@ -26,7 +26,7 @@ jobs:
 
       - name: Deploy
         run: |
-          working-directory: ./
+          working-directory: ./portfolio_repo/
           cd build/web
           git init
           git config --global user.email brunoalmeidadem@gmail.com
