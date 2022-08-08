@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Trocando pra pasta certa
+        run: cd portfolio_repo
+
       - name: Checkout
         uses: actions/checkout@v3
 
@@ -17,8 +20,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-      - name: Trocando pra pasta certa
-        run: cd portfolio_repo
+          
       - name: Install dependencies
         run: flutter pub get
 
